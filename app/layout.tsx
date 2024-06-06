@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import NavBar from "./components/nav/NavBar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -22,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
+        <header>
+          <NavBar />
+        </header>
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>

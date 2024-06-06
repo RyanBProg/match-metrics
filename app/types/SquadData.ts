@@ -119,7 +119,7 @@ type Statistics = {
   penalty: Penalty;
 };
 
-type PlayerData = {
+export type PlayerData = {
   player: Player;
   statistics: Statistics[];
 };

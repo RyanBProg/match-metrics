@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SideMenu from "./sideMenu";
+import SideMenu from "./SideMenu";
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
@@ -33,7 +33,7 @@ export default function NavBar() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              News
+              Team Stats
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>

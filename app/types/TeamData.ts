@@ -34,7 +34,7 @@ type Resp = {
   venue: Venue;
 };
 
-type TeamData = {
+export type TeamData = {
   get: string;
   parameters: Params;
   errors: string[];

@@ -1,0 +1,64 @@
+// *** variables *** //
+
+$clr-main: blue;
+$clr-sub: teal;
+$clr-accent: green;
+$clr-bg-light: white;
+$clr-bg-dark: black;
+$clr-black: black;
+$clr-white: white;
+$gutter: 40px;
+
+@media (max-width: 600px) {
+  $gutter: 20px;
+}
+
+// *** mix-ins *** //
+
+@mixin flex-center($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-space($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin font($size, $weight, $line, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  letter-spacing: $spacing;
+}
+
+// *** standards *** //
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  @include font(2.75rem, 700, 1, 1.2);
+}
+
+h2 {
+  @include font(1.75rem, 700, 1, 1.2);
+}
+
+h3 {
+  @include font(1.5rem, 600, 1, 1.2);
+}
+
+h4 {
+  @include font(1.25rem, 500, 1, 1.2);
+}
+
+p {
+  @include font(1rem, 400, 1, 1.2);
+}

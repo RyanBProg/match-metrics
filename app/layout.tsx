@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import { Rubik } from "next/font/google";
+import "./css/styles.scss";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import NavBar from "./components/nav/NavBar";
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
+const rubik = Rubik({
+  weight: ["300", "400", "500", "700", "800"],
   subsets: ["latin"],
-  display: "swap",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={rubik.className}>
         <header>
           <NavBar />
         </header>

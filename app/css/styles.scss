@@ -1,2 +1,27 @@
 @use "global";
 @use "boilerplate";
+
+body {
+  color: global.$clr-white;
+  background-color: global.$clr-black;
+}
+
+h1 {
+  @include global.font(3rem, 800, 0.9, 0.01rem);
+}
+
+h2 {
+  @include global.font(2.4rem, 700, 1, 0.02rem);
+}
+
+h3 {
+  @include global.font(2rem, 700, 1, 0.02rem);
+}
+
+h4 {
+  @include global.font(1.4rem, 500, 1.2, 0.03rem);
+}
+
+p {
+  @include global.font(1rem, 400, 1.2, 0.03rem);
+}

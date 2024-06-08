@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.module.scss";
 import { TeamData } from "../types/TeamData";
 import teamData from "../local-data/team-data.json";
 
